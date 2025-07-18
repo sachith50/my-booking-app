@@ -56,10 +56,10 @@ const TheVillaPage = () => {
                     </div>
                 </div>
 
-                {/* --- VVV --- THE ONLY CHANGE IS HERE --- VVV --- */}
-                {/* Section 2: Rest & Rejuvenate (with the new class) */}
-                <div className="villa-section-vertical">
-                {/* --- ^^^ --- THE ONLY CHANGE IS HERE --- ^^^ --- */}
+                {/* --- VVV --- THIS IS THE ONLY CHANGE --- VVV --- */}
+                {/* Section 2: Rest & Rejuvenate (with the correct class) */}
+                <div className="villa-section reverse">
+                {/* --- ^^^ --- END OF THE CHANGE --- ^^^ --- */}
                     <div className="villa-text-container">
                         <h2>Rest & Rejuvenate</h2>
                         <p>Designed to comfortably host large families, the villa offers a variety of flexible sleeping arrangements across three spacious bedrooms, ensuring a restful night for everyone in your group.</p>
