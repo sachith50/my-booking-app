@@ -1,0 +1,78 @@
+/* client/src/pages/TheVillaPage.css */
+
+.villa-page-container .page-header { text-align: center; max-width: 800px; margin: 0 auto; padding: 100px 20px 80px 20px; }
+.villa-page-container .page-header h1 { font-size: 3.5rem; color: var(--color-text); }
+
+.villa-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 100px auto;
+    width: 90%;
+}
+
+.villa-section.reverse .villa-image-container { order: 2; }
+.villa-image-container { cursor: pointer; border-radius: 8px; overflow: hidden; }
+.villa-image-container img { width: 100%; height: auto; display: block; transition: transform 0.3s ease; }
+.villa-image-container:hover img { transform: scale(1.05); }
+
+.villa-text-container h2 { font-size: 2.5rem; margin-bottom: 20px; color: var(--color-primary); }
+.text-button {
+    background: none; border: 1px solid var(--color-accent);
+    color: var(--color-accent); padding: 10px 20px;
+    border-radius: 4px; cursor: pointer;
+    font-family: var(--font-body); font-weight: bold;
+    margin-top: 20px; transition: all 0.3s ease;
+}
+.text-button:hover { background: var(--color-accent); color: white; }
+
+
+/* --- VVV --- NEW, SIMPLIFIED "ABOUT" SECTION STYLES --- VVV --- */
+.villa-summary-section {
+    padding: 80px 0;
+    margin-top: 50px;
+    border-top: 1px solid var(--color-border);
+}
+.section-title { font-size: 2.8rem; text-align: center; margin-bottom: 30px; }
+.summary-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2;
+    font-family: var(--font-heading); /* Use the elegant heading font for this special text */
+    font-style: italic;
+}
+/* --- ^^^ --- END OF NEW STYLES --- ^^^ --- */
+
+
+@media (max-width: 768px) {
+    .villa-section, .villa-section.reverse { grid-template-columns: 1fr; }
+    .villa-section.reverse .villa-image-container { order: -1; margin-bottom: 30px; }
+}
+/* client/src/pages/TheVillaPage.css */
+
+/* ... all of your existing CSS from .villa-page-container down to the media query ... */
+
+
+/* --- VVV --- ADD ONLY THIS NEW CSS AT THE END --- VVV --- */
+
+/* New class for the vertical layout */
+.villa-section-vertical {
+    max-width: 800px; /* A bit narrower for a focused look */
+    margin: 0 auto 100px auto;
+    width: 90%;
+    text-align: center; /* Center the text content */
+}
+
+.villa-section-vertical .villa-text-container {
+    margin-bottom: 30px; /* Add space between the text and the image */
+}
+
+.villa-section-vertical .villa-image-container {
+    max-width: 100%; /* Ensure image doesn't overflow */
+}
+
+/* --- ^^^ --- END OF NEW CSS --- ^^^ --- */

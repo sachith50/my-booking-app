@@ -1,0 +1,66 @@
+/* client/src/pages/ExperiencesPage.css */
+.experiences-page-container .page-header{text-align:center;max-width:800px;margin:0 auto;padding:100px 0}.experiences-page-container .page-header h1{font-size:3.5rem;color:var(--color-text)}.experiences-list{max-width:1200px;margin:0 auto;width:90%;padding-bottom:100px}.experience-card{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:80px}.experience-card.reverse .experience-image{order:2}.experience-image{width:100%;height:400px;border-radius:8px;overflow:hidden}.experience-text .experience-type{display:inline-block;margin-bottom:15px;font-weight:bold;color:var(--color-accent);letter-spacing:1px;text-transform:uppercase;font-size:.9rem}.experience-text h2{font-size:2.5rem;margin-bottom:20px}@media (max-width:960px){.experience-card,.experience-card.reverse{grid-template-columns:1fr}.experience-card.reverse .experience-image{order:-1;margin-bottom:30px}} /* client/src/pages/ExperiencesPage.css */
+
+/* ... all your existing CSS for this page remains at the top ... */
+
+
+/* --- VVV --- NEW STYLES FOR NEARBY ATTRACTIONS --- VVV --- */
+
+.nearby-attractions {
+    padding: 80px 0;
+    background-color: rgba(255, 255, 255, 0.05); /* A subtle background to lift the section */
+    border-top: 1px solid var(--color-border);
+}
+
+.attractions-grid {
+    display: grid;
+    /* This creates a responsive 3-column grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+/* client/src/pages/ExperiencesPage.css */
+
+/* ... all your existing CSS for this page remains at the top ... */
+
+
+/* --- VVV --- REVISED STYLES FOR ATTRACTION CARDS --- VVV --- */
+
+.attraction-card {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    overflow: hidden; /* This is key to make the image corners rounded */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.attraction-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.attraction-card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.attraction-card-content {
+    padding: 20px;
+}
+
+.attraction-card-content h3 {
+    font-size: 1.3rem;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.attraction-card-content p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 0;
+}

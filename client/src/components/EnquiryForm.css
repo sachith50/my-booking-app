@@ -1,0 +1,22 @@
+/* client/src/components/EnquiryForm.css */
+.enquiry-card{background:#fff;border:1px solid var(--color-border);padding:30px;border-radius:8px}.enquiry-card h3{text-align:center;font-family:var(--font-heading);font-size:2rem;margin-bottom:25px;color:var(--color-primary)}.enquiry-card form{display:flex;flex-direction:column;gap:15px}.enquiry-card input,.enquiry-card select,.enquiry-card textarea{width:100%;padding:12px;border:1px solid #ccc;border-radius:4px;font-family:var(--font-body);font-size:1rem}.enquiry-card textarea{min-height:100px}.form-message{text-align:center;margin-top:15px;font-weight:bold;color:var(--color-accent-dark)}
+/* client/src/components/EnquiryForm.css */
+
+/* ... all of your existing .enquiry-card styles remain at the top ... */
+
+
+/* --- VVV --- ADD ONLY THIS NEW CSS AT THE END --- VVV --- */
+
+/* This makes the DatePicker input match your other input fields */
+.date-input-full {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    background-color: white; /* Ensure it has a background */
+    color: #333; /* Ensure text is readable */
+}
+
+/* --- ^^^ --- END OF NEW CSS --- ^^^ --- */

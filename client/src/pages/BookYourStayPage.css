@@ -1,0 +1,57 @@
+/* client/src/pages/BookYourStayPage.css */
+
+.page-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+}
+.page-header h1 {
+    font-size: 3.5rem;
+    color: var(--color-text); /* Use main text color for this heading */
+}
+.booking-page-layout {
+    display: grid;
+    grid-template-columns: 1.75fr 1fr;
+    gap: 50px;
+}
+.gallery-showcase img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+.main-content h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 10px;
+}
+.amenities-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.sidebar {
+    position: sticky;
+    top: 40px;
+    height: fit-content;
+}
+.booking-widget-card {
+    background: var(--color-card-background); /* <-- THEME FIX */
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2); /* Slightly stronger shadow for dark theme */
+}
+.booking-widget-card h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--color-accent);
+}
+@media (max-width: 960px) {
+    .booking-page-layout {
+        grid-template-columns: 1fr;
+    }
+}

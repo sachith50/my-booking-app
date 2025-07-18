@@ -1,0 +1,33 @@
+/* client/src/components/VillaGlimpse.css */
+.glimpse-section {
+    padding: 100px 0;
+    background-color: rgba(255, 255, 255, 0.03); /* A very subtle off-white to lift it from the dark background */
+}
+.glimpse-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+.glimpse-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.glimpse-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--color-text);
+}
+.glimpse-content p {
+    color: #ccc; /* A lighter text color for contrast on the dark theme */
+    margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+    .glimpse-grid { 
+        grid-template-columns: 1fr; 
+    }
+    .glimpse-image {
+        margin-bottom: 30px;
+    }
+}

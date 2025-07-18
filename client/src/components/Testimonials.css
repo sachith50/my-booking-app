@@ -1,0 +1,44 @@
+/* client/src/components/Testimonials.css */
+
+.testimonial-section {
+    padding: 100px 0;
+    background-color: rgba(255, 255, 255, 0.03); /* Subtle background to separate the section */
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.testimonial-main-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+}
+
+.testimonial-grid {
+    display: grid;
+    /* This creates 3 columns on desktop, and adapts to 1 on mobile */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.testimonial-card {
+    border-left: 3px solid var(--color-accent); /* An elegant accent border */
+    padding-left: 25px;
+}
+
+.testimonial-quote {
+    font-family: var(--font-body); /* Using the body font for readability */
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: var(--color-text);
+    border: none;
+    padding: 0;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--color-accent);
+}

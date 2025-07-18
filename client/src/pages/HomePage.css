@@ -1,0 +1,2 @@
+/* client/src/pages/HomePage.css */
+.intro-text{text-align:center;max-width:800px;margin:0 auto 80px auto;font-family:var(--font-heading);font-size:1.6rem;line-height:1.7;color:var(--color-text)}.highlights-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;margin-top:40px}.highlight-card{text-align:center;padding:20px}.highlight-icon{font-size:3.5rem;margin-bottom:1rem}.highlight-card h3{color:var(--color-accent);font-size:1.5rem;margin-bottom:.5rem}

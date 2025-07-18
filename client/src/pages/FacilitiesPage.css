@@ -1,0 +1,100 @@
+/* client/src/pages/FacilitiesPage.css */
+
+.facilities-page-container .page-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+.facilities-page-container .page-header h1 {
+    font-size: 3.5rem;
+    color: var(--color-text);
+}
+
+.facilities-main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* --- VVV THIS IS THE NEW CLASS --- VVV */
+/* This ensures the chargeable activities grid is also 2 columns on desktop */
+.chargeable-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.facility-category-card {
+    background: #fff;
+    padding: 30px 35px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+}
+
+.facility-category-card h3 {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.facility-category-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.facility-category-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.facility-category-card ul li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+    font-size: 1.05rem;
+}
+
+.facility-category-card ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.conscious-living-section {
+    text-align: center;
+    max-width: 800px;
+    margin: 100px auto 0 auto;
+    padding-top: 60px;
+    border-top: 1px solid var(--color-border);
+}
+
+.conscious-living-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.chargeable-activities-section {
+    margin-top: 80px;
+    padding-top: 60px;
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+}
+
+.chargeable-activities-section h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+/* --- VVV THIS IS THE UPDATED MEDIA QUERY --- VVV */
+/* Responsive adjustments for mobile */
+@media (max-width: 960px) {
+    /* This rule now applies to BOTH grids, making them stack to 1 column */
+    .facilities-main-grid,
+    .chargeable-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,103 @@
+/* client/src/components/Navbar.css */
+
+/* --- Base Header Styles (from your original styles object) --- */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 5%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease-out;
+}
+
+.brand-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    transition: color 0.4s ease-out;
+}
+
+.desktop-nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    transition: color 0.4s ease-out;
+}
+
+/* --- VVV --- NEW MOBILE MENU STYLES --- VVV --- */
+
+/* Hamburger Menu Icon */
+.hamburger-menu {
+    display: none; /* Hidden by default on desktop */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.hamburger-menu div {
+    width: 2rem;
+    height: 0.25rem;
+    background: white;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
+/* Mobile Menu Overlay */
+.mobile-nav-overlay {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%); /* Hidden off-screen by default */
+}
+
+.mobile-nav-overlay.open {
+    transform: translateX(0); /* Slides in when open */
+}
+
+.mobile-nav-overlay .nav-link {
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: white;
+}
+
+
+/* --- VVV --- MEDIA QUERY FOR RESPONSIVENESS --- VVV --- */
+
+/* This applies the styles only on screens 768px wide or smaller */
+@media (max-width: 768px) {
+    .desktop-nav-links {
+        display: none; /* Hide the normal links on mobile */
+    }
+
+    .hamburger-menu {
+        display: flex; /* Show the hamburger icon on mobile */
+    }
+}
