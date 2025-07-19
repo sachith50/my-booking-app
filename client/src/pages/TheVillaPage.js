@@ -73,7 +73,7 @@ const TheVillaPage = () => {
                 {/* Section 3: An Estate of Your Own (UNCHANGED) */}
                 <div className="villa-section">
                      <div className="villa-text-container">
-                        <h2>An Estate of Your Own</h2>
+                        <h2>Outdoor Oasis</h2>
                         <p>The villa is nestled within your own secure, 2-acre private property, free from the noise, air, and light pollution of city life. Step outside to find solitude, connect with nature, and create unforgettable family memories.</p>
                         <button className="text-button" onClick={() => openLightbox(outdoorOasisImages, 0)}>View Gallery</button>
                     </div>

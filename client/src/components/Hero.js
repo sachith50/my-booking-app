@@ -13,7 +13,7 @@ const Hero = () => {
             </video>
             <div className="hero-overlay"></div>
             <div className="hero-content">
-                <h1 className="hero-headline">Your Private Estate on the Backwaters</h1>
+                <h1 className="hero-headline">A Farmstay on the Backwaters</h1>
                 <p className="hero-subheadline">An exclusive retreat for families and groups to destress, rejuvenate, and reconnect with nature.</p>
                 <Link to="/contact-us" className="btn">Book Your Stay</Link>
             </div>
