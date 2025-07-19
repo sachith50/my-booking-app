@@ -70,7 +70,7 @@ const EnquiryForm = () => {
                 />
                 
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px' }}>
-                    <input type="number" name="numDays" value={numDays} onChange={onChange} placeholder="NUMBER OF NIGHTS" min="1" required />
+                    <input type="number" name="numDays" value={numDays} onChange={onChange} placeholder="NUMBER OF DAYS" min="1" required />
                     <select name="adults" value={adults} onChange={onChange}>
                         {[...Array(8)].map((_, i) => <option key={i} value={i+1}>{i+1} Adult{i > 0 ? 's' : ''}</option>)}
                     </select>
