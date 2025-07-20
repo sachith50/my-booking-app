@@ -16,14 +16,23 @@ const ContactUsPage = () => {
                     <h3>Important Policies</h3>
                     <ul>
                         <li>This is a strictly <strong>vegetarian</strong> property. Non-vegetarian food is not permitted.</li>
-                        
-                        {/* --- THE FIX: "no-alcohol" is now bolded --- */}
                         <li>To maintain a serene and family-friendly atmosphere, this is a <strong>NO-ALCOHOL</strong> property.</li>
                         <li><strong>SMOKING</strong> is not allowed inside the house.</li>
                         <li><strong>Child Policy:</strong> Children above 3 years of age are considered extra guests and will be charged accordingly.</li>
                         <li>We are pet-friendly, but request that pets are not allowed on beds or sofas.</li>
                         <li>Your privacy is paramount. When you book, the entire house is exclusively yours.</li>
                     </ul>
+
+                    {/* --- VVV THIS IS THE NEW SECTION --- VVV */}
+                    <h3 className="policy-subheading">Cancellation Policy</h3>
+                    <ul>
+                        <li>More than 15 days prior to check-in - 15% will be deducted from the amount.</li>
+                        <li>15-7 Days prior to check-in - 20% will be deducted from the amount.</li>
+                        <li>7-3 Days prior to check-in - 50% will be deducted from the amount.</li>
+                        <li>3-0 Days prior to check-in – <strong>NO REFUND</strong></li>
+                        <li>For Diwali / Christmas / Long weekend / Public holidays - <strong>NO REFUND</strong></li>
+                    </ul>
+                    {/* --- ^^^ END OF NEW SECTION ^^^ --- */}
                 </div>
 
                 <div className="contact-details">

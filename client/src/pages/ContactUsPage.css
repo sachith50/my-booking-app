@@ -67,4 +67,15 @@
         grid-template-columns: 1fr; /* Stack the columns on top of each other */
         gap: 50px;
     }
+} /* client/src/pages/ContactUsPage.css */
+
+/* ... all of your existing CSS is above this line ... */
+
+
+/* --- VVV --- ADD ONLY THIS NEW STYLE AT THE END --- VVV --- */
+
+.policy-subheading {
+    margin-top: 30px; /* Adds a nice space above the new heading */
+    padding-top: 20px; /* Adds a bit more space */
+    border-top: 1px solid var(--color-border); /* Adds a subtle separator line */
 }
