@@ -23,7 +23,6 @@ const ContactUsPage = () => {
                         <li>Your privacy is paramount. When you book, the entire house is exclusively yours.</li>
                     </ul>
 
-                    {/* --- VVV THIS IS THE NEW SECTION --- VVV */}
                     <h3 className="policy-subheading">Cancellation Policy</h3>
                     <ul>
                         <li>More than 15 days prior to check-in - 15% will be deducted from the amount.</li>
@@ -32,8 +31,24 @@ const ContactUsPage = () => {
                         <li>3-0 Days prior to check-in – <strong>NO REFUND</strong></li>
                         <li>For Diwali / Christmas / Long weekend / Public holidays - <strong>NO REFUND</strong></li>
                     </ul>
-                    {/* --- ^^^ END OF NEW SECTION ^^^ --- */}
                 </div>
+
+                {/* --- VVV --- THIS IS THE NEW LOCATION SECTION --- VVV --- */}
+                <div className="location-box">
+                    <h3>Our Location</h3>
+                    <p>
+                        JSK Farmstay<br/>
+                        KRS Backwaters, Yedahalli Village,<br/>
+                        Yelawala Hobli, Mysuru - 571130
+                    </p>
+                    <h3 className="location-subheading">How to Reach Us</h3>
+                    <ul>
+                        <li><strong>From Bengaluru South:</strong> Approx. 2 hours drive.</li>
+                        <li><strong>From Bengaluru North:</strong> Approx. 2.5 hours drive.</li>
+                        <li>We are just half an hour away from <strong>Mysuru</strong> city!</li>
+                    </ul>
+                </div>
+                {/* --- ^^^ --- END OF NEW SECTION --- ^^^ --- */}
 
                 <div className="contact-details">
                     <p>Thanks,</p>

@@ -19,18 +19,20 @@ const onSiteExperiences = [
     },
     {
         title: "Authentic Culinary Journey",
-        description: "Taste the true flavors of Karnataka with simple, wholesome vegetarian meals prepared by our caretaker. We specialize in local dishes like Bassaru and Ragi Balls, made with fresh produce from our farm or nearby villages, organic turmeric, and pure ghee. (Note: Food is chargeable).",
+        // --- VVV --- THIS IS THE FINAL, CORRECTED DESCRIPTION --- VVV ---
+        description: "Taste the true flavors of Karnataka with simple, wholesome vegetarian meals prepared by our caretaker. We specialize in local dishes like Bassaru and Ragi Balls, made with fresh produce from our farm, organic turmeric, and pure ghee. We use only Pink Himalayan salt for a healthier touch. Meal timings are Breakfast: 8:00 AM, Lunch: 1:30 PM, and Dinner: 7:00 PM. (Note: Food is chargeable and requires one day's advance notice).",
+        // --- ^^^ --- END OF THE CORRECTED DESCRIPTION --- ^^^ ---
         images: ["/images/jsk-food1.webp", "/images/idli.webp", "/images/poori.webp"],
         type: "A Taste of Tradition"
     }
 ];
 
-// --- DATA FOR NEARBY PLACES WITH MEENAKSHIPURA ADDED ---
+// --- DATA FOR NEARBY PLACES ---
 const nearbyAttractions = [
     { 
         title: "Meenakshipura", 
         description: "Experience the unique 'mini ocean' feel with vastness and waves at this stunningly scenic backwater spot.",
-        image: "/images/attractions/meenakshipura.webp" // Replace with your image
+        image: "/images/attractions/meenakshipura.webp"
     },
     { 
         title: "Brindavan Gardens", 
@@ -111,3 +113,4 @@ const ExperiencesPage = () => {
 };
 
 export default ExperiencesPage;
+

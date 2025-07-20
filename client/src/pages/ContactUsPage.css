@@ -79,3 +79,40 @@
     padding-top: 20px; /* Adds a bit more space */
     border-top: 1px solid var(--color-border); /* Adds a subtle separator line */
 }
+/* client/src/pages/ContactUsPage.css */
+
+/* ... all of your existing CSS is above this line ... */
+
+
+/* --- VVV --- ADD ONLY THIS NEW STYLE AT THE END --- VVV --- */
+
+.location-box {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid var(--color-border);
+}
+
+.location-box h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.location-box p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.location-box .location-subheading {
+    margin-top: 30px;
+}
+
+.location-box ul {
+    list-style-type: '• '; /* A simple bullet point */
+    padding-left: 20px;
+    margin: 0;
+}
+
+.location-box ul li {
+    margin-bottom: 10px;
+}
