@@ -21,6 +21,7 @@ const ContactUsPage = () => {
                         <li><strong>Child Policy:</strong> Children above 3 years of age are considered extra guests and will be charged accordingly.</li>
                         <li>We are pet-friendly, but request that pets are not allowed on beds or sofas.</li>
                         <li>Your privacy is paramount. When you book, the entire house is exclusively yours.</li>
+                        <li>Meals will be charged <strong>per head</strong>.</li>
                     </ul>
 
                     <h3 className="policy-subheading">Cancellation Policy</h3>
